@@ -1,0 +1,68 @@
+#kairanban-menu .fa-pencil-square-o {
+  font-size:20px;
+  float:left;
+}
+
+#kairanban-modal-list .tabbable {
+  margin-top: 8px;
+}
+#kairanban-modal-list {
+  padding: 0 10px 20px 10px;
+}
+#kairanban-modal-list .tab-content {
+  border: 1px solid #dddddd;
+  border-top: 0;
+  padding: 15px;
+  max-height: 325px;
+  overflow: auto;
+}
+#kairanban-modal-list .nav {
+  margin-bottom: 0;
+}
+#kairanban-modal-list .progress, #kairanban-modal-list .bar {
+  height: 40px;
+  line-height: 40px;
+}
+#kairanban-modal-list .progress {
+  /*background-color: #333333;*/
+  background-image: linear-gradient(to bottom,#aaaaaa,#cccccc);
+}
+#kairanban-modal-list .progress a:active, #kairanban-modal-list .progress a:visited, #kairanban-modal-list .progress a:link {
+  color: #ffffff;
+}
+#kairanban-modal-list .alert {
+  height: 40px;
+  line-height: 20px;
+  margin-bottom: 0;
+  padding: 0 8px 0 8px;
+}
+#kairanban-modal-list .progress a {
+  position: absolute;
+  left: 35px;
+}
+
+#kairanban_edit_form th, #kairanban_reviewer_edit_form th, #kairanban-activities th {
+  width: 120px;
+}
+#kairanban_edit_form #kairanban_title {
+  width: 350px;
+}
+#kairanban_edit_form #kairanban_body, #kairanban_activity_add_form #kairanban_activity_body {
+  width: 350px;
+  height: 80px;
+}
+#kairanban_edit_form #kairanban_community_id {
+  width: 330px;
+}
+#kairanban_edit_form #kairanban_due_date_year {
+  width: 40px;
+}
+#kairanban_edit_form #kairanban_due_date_month, #kairanban_edit_form #kairanban_due_date_day {
+  width: 60px;
+}
+#kairanban_edit_form #kairanban_link_1_url, #kairanban_edit_form #kairanban_link_2_url, #kairanban_edit_form #kairanban_link_3_url {
+  width: 350px;
+}
+#kairanban_edit_form .control-button, #kairanban_activity_add_form .control-button {
+  text-align: right;
+}

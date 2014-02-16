@@ -1,0 +1,33 @@
+kairanban_empty_kairanban:
+  url: /kairanban/emptykairanban.json
+  param: { module: kairanban, action: emptyKairanban, sf_format: json }
+  requirements: { sf_method: [get] }
+
+kairanban_add_kairanban:
+  url: /kairanban/addkairanban.json
+  param: { module: kairanban, action: addKairanban, sf_format: json }
+  requirements: { sf_method: [post] }
+
+kairanban_get_kairanban:
+  url: /kairanban/getkairanban.json
+  param: { module: kairanban, action: getKairanban, sf_format: json }
+  requirements: { sf_method: [get] }
+
+kairanban_edit_kairanban_reviewer:
+  url: /kairanban/editkairanbanreviewr.json
+  param: { module: kairanban, action: editKairanbanReviewer, sf_format: json }
+  requirements: { sf_method: [post] }
+
+kairanban_add_kairanban_activity:
+  url: /kairanban/addkairanbanactivity.json
+  param: { module: kairanban, action: addKairanbanActivity, sf_format: json }
+  requirements: { sf_method: [post] }
+
+kairanban_edit_kairanban:
+  url: /kairanban/editkairanban.json
+  param: { module: kairanban, action: editKairanban, sf_format: json }
+  requirements: { sf_method: [post] }
+
+kairanban_no_default:
+  url: /kairanban/*
+  param: {module: default, action: error}

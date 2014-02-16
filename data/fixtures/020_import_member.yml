@@ -1,0 +1,188 @@
+Member:
+  kairanban_sample_member_2:
+    name: "dummy2"
+    is_active: 1
+  kairanban_sample_member_3:
+    name: "dummy2"
+    is_active: 1
+  kairanban_sample_member_4:
+    name: "dummy2"
+    is_active: 1
+  kairanban_sample_member_5:
+    name: "dummy2"
+    is_active: 1
+
+MemberProfile:
+  kairanban_sample_member_2_profile_sex:
+    value: "Man"
+    public_flag: 1
+    Member: kairanban_sample_member_2
+    Profile: profile_sex
+
+  kairanban_sample_member_2_profile_birthday:
+    value: "1988-04-23"
+    public_flag: 1
+    Member: kairanban_sample_member_2
+    Profile: profile_birthday
+
+  kairanban_sample_member_2_profile_region:
+    value: "Tokyo"
+    public_flag: 1
+    Member: kairanban_sample_member_2
+    Profile: profile_region
+
+  kairanban_sample_member_2_profile_self_intro:
+    value: "よろしくお願いします。"
+    public_flag: 1
+    Member: kairanban_sample_member_2
+    Profile: profile_self_intro
+  kairanban_sample_member_3_profile_sex:
+    value: "Man"
+    public_flag: 1
+    Member: kairanban_sample_member_3
+    Profile: profile_sex
+
+  kairanban_sample_member_3_profile_birthday:
+    value: "1988-04-23"
+    public_flag: 1
+    Member: kairanban_sample_member_3
+    Profile: profile_birthday
+
+  kairanban_sample_member_3_profile_region:
+    value: "Tokyo"
+    public_flag: 1
+    Member: kairanban_sample_member_3
+    Profile: profile_region
+
+  kairanban_sample_member_3_profile_self_intro:
+    value: "よろしくお願いします。"
+    public_flag: 1
+    Member: kairanban_sample_member_3
+    Profile: profile_self_intro
+  kairanban_sample_member_4_profile_sex:
+    value: "Man"
+    public_flag: 1
+    Member: kairanban_sample_member_4
+    Profile: profile_sex
+
+  kairanban_sample_member_4_profile_birthday:
+    value: "1988-04-23"
+    public_flag: 1
+    Member: kairanban_sample_member_4
+    Profile: profile_birthday
+
+  kairanban_sample_member_4_profile_region:
+    value: "Tokyo"
+    public_flag: 1
+    Member: kairanban_sample_member_4
+    Profile: profile_region
+
+  kairanban_sample_member_4_profile_self_intro:
+    value: "よろしくお願いします。"
+    public_flag: 1
+    Member: kairanban_sample_member_4
+    Profile: profile_self_intro
+  kairanban_sample_member_5_profile_sex:
+    value: "Man"
+    public_flag: 1
+    Member: kairanban_sample_member_5
+    Profile: profile_sex
+
+  kairanban_sample_member_5_profile_birthday:
+    value: "1988-04-23"
+    public_flag: 1
+    Member: kairanban_sample_member_5
+    Profile: profile_birthday
+
+  kairanban_sample_member_5_profile_region:
+    value: "Tokyo"
+    public_flag: 1
+    Member: kairanban_sample_member_5
+    Profile: profile_region
+
+  kairanban_sample_member_5_profile_self_intro:
+    value: "よろしくお願いします。"
+    public_flag: 1
+    Member: kairanban_sample_member_5
+    Profile: profile_self_intro
+
+MemberConfig:
+  kairanban_sample_member_2_pc_address:
+    name: "pc_address"
+    value: "dummy2@example.com"
+    Member: kairanban_sample_member_2
+
+  kairanban_sample_member_2_password:
+    name: "password"
+    value: <?php echo md5('password') . "\n"; ?>
+    Member: kairanban_sample_member_2
+
+  kairanban_sample_member_2_secret_question:
+    name: "secret_question"
+    value: "5"
+    Member: kairanban_sample_member_2
+
+  kairanban_sample_member_2_secret_answer:
+    name: "secret_answer"
+    value: "<?php echo md5('東京都'); ?>"
+    Member: kairanban_sample_member_2
+
+  kairanban_sample_member_3_pc_address:
+    name: "pc_address"
+    value: "dummy3@example.com"
+    Member: kairanban_sample_member_3
+
+  kairanban_sample_member_3_password:
+    name: "password"
+    value: <?php echo md5('password') . "\n"; ?>
+    Member: kairanban_sample_member_3
+
+  kairanban_sample_member_3_secret_question:
+    name: "secret_question"
+    value: "5"
+    Member: kairanban_sample_member_3
+
+  kairanban_sample_member_3_secret_answer:
+    name: "secret_answer"
+    value: "<?php echo md5('東京都'); ?>"
+    Member: kairanban_sample_member_3
+
+  kairanban_sample_member_4_pc_address:
+    name: "pc_address"
+    value: "dummy4@example.com"
+    Member: kairanban_sample_member_4
+
+  kairanban_sample_member_4_password:
+    name: "password"
+    value: <?php echo md5('password') . "\n"; ?>
+    Member: kairanban_sample_member_4
+
+  kairanban_sample_member_4_secret_question:
+    name: "secret_question"
+    value: "5"
+    Member: kairanban_sample_member_4
+
+  kairanban_sample_member_4_secret_answer:
+    name: "secret_answer"
+    value: "<?php echo md5('東京都'); ?>"
+    Member: kairanban_sample_member_4
+
+  kairanban_sample_member_5_pc_address:
+    name: "pc_address"
+    value: "dummy5@example.com"
+    Member: kairanban_sample_member_5
+
+  kairanban_sample_member_5_password:
+    name: "password"
+    value: <?php echo md5('password') . "\n"; ?>
+    Member: kairanban_sample_member_5
+
+  kairanban_sample_member_5_secret_question:
+    name: "secret_question"
+    value: "5"
+    Member: kairanban_sample_member_5
+
+  kairanban_sample_member_5_secret_answer:
+    name: "secret_answer"
+    value: "<?php echo md5('東京都'); ?>"
+    Member: kairanban_sample_member_5

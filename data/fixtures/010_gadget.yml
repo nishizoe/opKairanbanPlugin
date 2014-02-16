@@ -1,0 +1,5 @@
+Gadget:
+  kairanban_menu:
+    type: "sideBannerContents"
+    name: "kairanbanMenu"
+    sort_order: 101

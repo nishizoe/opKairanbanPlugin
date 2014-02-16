@@ -1,0 +1,9 @@
+kairanbanMenu:
+  caption:
+    en_US: "Circular Notice Menu"
+    ja_JP: "回覧板メニュー"
+  description:
+    en_US: "add a circular menu for navigation."
+    ja_JP: "ナビゲーションに回覧板メニューを追加します"
+  component: [kairanban, menu]
+

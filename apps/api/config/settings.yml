@@ -1,0 +1,3 @@
+all:
+  .settings:
+    csrf_secret: <?php sfConfig::has('op_csrf_secret') ? print sfConfig::get('op_csrf_secret') : print filemtime(__FILE__)."\n" ?>

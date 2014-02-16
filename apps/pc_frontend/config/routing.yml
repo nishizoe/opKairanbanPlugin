@@ -1,0 +1,3 @@
+kairan_no_default:
+  url: /kairanban/*
+  param: {module: default, action: error}

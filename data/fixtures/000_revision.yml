@@ -1,0 +1,4 @@
+SnsConfig:
+  op_kairanban_plugin_current_revision:
+    name: "opKairanbanPlugin_revision"
+    value: 1

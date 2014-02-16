@@ -1,0 +1,48 @@
+Kairanban:
+  kairanban_sample1:
+    member_id: 1
+    title: '仕様書の確認依頼'
+    body: '仕様書を確認して下さい。'
+    due_date: '2014-09-09 00:00:00'
+
+  kairanban_sample2:
+    member_id: 1
+    title: '仕様書の確認依頼2'
+    body: '仕様書を確認して下さい。'
+    community_id: 1
+    due_date: '2014-09-10 00:00:00'
+
+KairanbanReviewer:
+  kairanban_sample1_1:
+    kairanban_id: 1
+    member_id: 2
+    is_allow: false
+
+  kairanban_sample1_2:
+    kairanban_id: 1
+    member_id: 4
+    is_allow: false
+
+  kairanban_sample2_1:
+    kairanban_id: 2
+    member_id: 2
+    is_allow: true
+
+  kairanban_sample2_2:
+    kairanban_id: 2
+    member_id: 4
+    is_allow: false
+
+KairanbanActivity:
+  kairanban_sample1_1:
+    kairanban_id: 1
+    body: 'added this.'
+
+  kairanban_sample2_1:
+    kairanban_id: 2
+    body: 'added this.'
+
+KairanbanLink:
+  kairanban_sample1_1:
+    kairanban_id: 1
+    url: 'http://yahoo.co.jp/'

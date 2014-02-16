@@ -1,0 +1,56 @@
+options:
+  charset: utf8
+actAs: [Timestampable]
+
+Kairanban:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true, comment: "Serial number" }
+    member_id: { type: integer(4), notnull: true, comment: "Author" }
+    title: { type: string, notnull: true, comment: "Title" }
+    body: { type: string, notnull: true, comment: "Content" }
+    community_id: { type: integer(4), notnull: false }
+    due_date: { type: timestamp, notnull: false }
+  relations:
+    Member: { local: member_id, foreign: id, onDelete: cascade }
+    Community: { local: community_id, foreign: id, onDelete: cascade }
+
+KairanbanLink:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    kairanban_id: { type: integer(4), notnull: false }
+    url: { type: string, notnull: true }
+  relations:
+    Kairanban:
+      onDelete: cascade
+
+KairanbanReviewer:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    kairanban_id: { type: integer(4), notnull: true }
+    member_id: { type: integer(4), notnull: true }
+    is_allow: { type: boolean, notnull: true, default: false }
+  relations:
+    Kairanban:
+      onDelete: cascade
+    Member:
+      onDelete: cascade
+  indexes:
+    kairanban_id_member_UNIQUE:
+      fields: [kairanban_id, member_id]
+      type: unique
+
+KairanbanActivity:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    kairanban_id: { type: integer(4), notnull: true }
+    member_id: { type: integer(4), notnull: false }
+    body: { type: string, notnull: true }
+  relations:
+    Kairanban:
+      onDelete: cascade
+    Member:
+      onDelete: cascade
