@@ -17,8 +17,7 @@ abstract class PluginKairanbanActivityForm extends BaseKairanbanActivityForm
 
     unset($this['id']);
     $this->useFields(array('body'));
-    $options = array(
-      'label'        => false,
-    );
+    $this->setWidget('body', new sfWidgetFormTextarea());
+    $this->setValidator('body', new opValidatorString(array('rtrim' => true)));
   }
 }
