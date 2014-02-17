@@ -19,8 +19,6 @@ class opKairanbanPluginReviewerForm extends KairanbanReviewerForm
 {
   public function configure()
   {
-//    unset($this['id']);
-//    $this->useFields(array());
     $members = Doctrine::getTable('Member')->createQuery('m')
       ->addWhere('m.is_active = ?', '1')
       ->execute();

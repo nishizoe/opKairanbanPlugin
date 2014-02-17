@@ -10,7 +10,7 @@
 
 
 /**
- * opMemberCsvList
+ * opKairanbanPluginKairanban
  *
  * @package    OpenPNE
  * @subpackage model
@@ -22,6 +22,12 @@ class opKairanbanPluginKairanban extends Doctrine_Table
   {
   }
 
+  /**
+   * 送信した回覧板の一覧を取得します。
+   *
+   * @param $memberId
+   * @return array
+   */
   public function getSentKairanbanListByMemberId($memberId)
   {
     $sql = "select";
@@ -74,6 +80,12 @@ class opKairanbanPluginKairanban extends Doctrine_Table
     return $result;
   }
 
+  /**
+   * 受信した回覧板の一覧を取得します
+   *
+   * @param $memberId
+   * @return array
+   */
   public function getReceivedKairanbanListByMemberId($memberId)
   {
     $sql = "select";
@@ -123,6 +135,7 @@ class opKairanbanPluginKairanban extends Doctrine_Table
       $kairanban = array_merge($kairanban, array('due_date_caption' => $dueDateCaption, 'css_class' => $cssClass));
       $result[] = $kairanban;
     }
+
     return $result;
   }
 }
