@@ -20,7 +20,7 @@ KairanbanLink:
   columns:
     id: { type: integer(4), primary: true, autoincrement: true }
     kairanban_id: { type: integer(4), notnull: false }
-    url: { type: string, notnull: true }
+    url: { type: string, notnull: false }
   relations:
     Kairanban:
       onDelete: cascade
