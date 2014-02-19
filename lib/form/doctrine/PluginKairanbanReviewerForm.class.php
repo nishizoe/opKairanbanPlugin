@@ -16,7 +16,6 @@ abstract class PluginKairanbanReviewerForm extends BaseKairanbanReviewerForm
     $this->setWidget('kairanban_id', new sfWidgetFormInputHidden());
     $this->setWidget('member_id', new sfWidgetFormInputHidden());
 
-//    unset($this['id']);
     $this->useFields(array('is_allow'));
 
     $this->setWidget('is_allow', new sfWidgetFormInputCheckbox());
