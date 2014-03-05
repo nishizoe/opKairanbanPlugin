@@ -13,14 +13,13 @@ abstract class PluginKairanbanLinkForm extends BaseKairanbanLinkForm
   {
     parent::setup();
 
-    unset($this['id']);
     $this->useFields(array('url'));
     $options = array(
       'label'        => false,
     );
 
-    $this->setWidget('url', new sfWidgetFormInput($options));
+    $this->setWidget('url', new sfWidgetFormInputText($options));
 
-    $this->setValidator('url', new opValidatorString(array('rtrim' => true)));
+    $this->setValidator('url', new opValidatorString(array('rtrim' => true, 'required' => false)));
   }
 }
